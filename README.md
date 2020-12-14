@@ -4,7 +4,7 @@ A case study of game leaderboard implement in Golang, Redis and MongoDB. Include
 
 ## Public url
 
-``
+`https://arcane-beach-01523.herokuapp.com/`
 
 ## Running locally
 
