@@ -169,7 +169,9 @@ func GetLeaderboardInRange(c *gin.Context) {
 			return
 		}
 		var user models.User
-		err = usersCollection.FindOne(ctx, bson.M{"_id": oid}).Decode(&user)
+		findOptions := options.FindOne()
+		findOptions.SetProjection(bson.M{"password": 0})
+		err = usersCollection.FindOne(ctx, bson.M{"_id": oid}, findOptions).Decode(&user)
 		rank, err := redisClient.ZRevRank(ctx, "leaderboard", user.ID.Hex()).Result()
 		if err != nil {
 			c.JSON(500, gin.H{"msg": err.Error()})
