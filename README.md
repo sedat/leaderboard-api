@@ -32,7 +32,7 @@ Various endpoint that return leaderboard in different ways. All endpoints under 
 
 #### GET /leaderboard
 
-Returns the entire leaderboard
+Returns the entire leaderboard of all users. This request takes a lot of time. Heroku as a timeout of 30 seconds. In large collections of data this will return a 503 - Request Timeout. It's better to use paging with the range endpoint considering both time and response payload.
 
 ##### Response
 
