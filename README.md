@@ -347,7 +347,7 @@ Add the score to the users point field and updates her rank
 }
 ```
 
-#### POST /user/profile/:profileId
+#### GET /user/profile/:profileId
 
 Returns the user with id profileID. Requires a token to be in the Authorization header
 
