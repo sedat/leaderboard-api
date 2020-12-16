@@ -6,6 +6,8 @@ A case study of game leaderboard implement in Golang, Redis and MongoDB. Include
 
 `https://arcane-beach-01523.herokuapp.com/`
 
+The app is deployed to Heroku using Heroku Redis, and a Mongodb cluster on Mongodb Atlas. All free tier.
+
 ## Running locally
 
 To run the application locally you need;
@@ -16,7 +18,7 @@ To run the application locally you need;
 
 All these tools above are configured to run on their local default configurations.
 
-Once you completed setting them up, please run `god mod download` to download Go dependencies
+Once you completed setting them up, please run `god mod download` to download Go dependencies. You can see the list of dependencies in `go.mod`. Please don't forget to add the required environment variables.
 
 ## Running with docker
 
