@@ -1,6 +1,6 @@
 # Leaderboard API
 
-A case study of game leaderboard implement in Golang, Redis and MongoDB. Includes ranking using sorted set of Redis, JWT authentication using Mongodb and password hash encryption and ranking based on country. You can kickstart the MongoDB using an endpoint that will generate the amount of users you decided.
+A game leaderboard implemented in Golang, Redis and MongoDB. Includes general and country based ranking with Redis Sorted Sets, MongoDB as persistent database and password hash encryption with JWT authentication. 
 
 ## Public url
 
